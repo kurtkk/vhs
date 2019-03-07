@@ -1,0 +1,14 @@
+The documentation must be updated.
+These calls produce fatal errors under TYPO3 V9.5.5: 
+<v:condition.string.isNumeric then="[mixed]" else="[mixed]" condition="1" value="[mixed]">
+	<!-- tag content - may be ignored! -->
+</v:condition.string.isNumeric>
+{v:condition.string.isNumeric(then: [mixed], else: [mixed], condition: 1, value: [mixed])}
+
+New and correct calls are without the parameter "condition":
+
+<v:condition.string.isNumeric then="[mixed]" else="[mixed]" value="[mixed]">
+	<!-- tag content - may be ignored! -->
+</v:condition.string.isNumeric>
+{v:condition.string.isNumeric(then: [mixed], else: [mixed], value: [mixed])}
+
